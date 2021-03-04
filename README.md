@@ -12,7 +12,7 @@ We will consider XML files withot single self closed tags and metadata should be
 1. First part is to create module that would conver json data to xml and vice versa.
 2. create command which takes json or xml file and convert it to xml or json file and save as file
 
-Coverter module \n
+Coverter module <br>
 Have following classes
 
 1. Node 
