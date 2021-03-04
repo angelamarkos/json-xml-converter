@@ -95,7 +95,8 @@ then ```"<data>\n <data_1> 1 < /data_1> \n <data_2>\n <data_2_sub id=0 > 1 </dat
   
 if we have following xml data
 
-```<data>
+```
+<data>
   <data_1>2</data_1>
   <data_2> 
     <data_2_sub id=1>2</data_2_sub>
@@ -121,7 +122,8 @@ converted json should be
 Command 
 1. write command that have at least following instructions:
 
-```usage: xml-json-converter [-h] [-m {output,path}]
+```
+usage: xml-json-converter [-h] [-m {output,path}]
                           path_to_data [path_to_convert]
 
 This command convert from json data type to xml and vice versa. path_to_data
