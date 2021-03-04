@@ -68,14 +68,15 @@ node_2 = Node('data_2', parent=root)
 ``` 
 <br>
 for list we createing subnodes with metadata id <br>
-```
+
+`
 sub_node2_1 = Node('data_2_sub',parent=node_2, metadata={'id': 0}, value=1)
 sub_node2_2 = Node('data_2_sub',parent=node_2, metadata={'id': 1}, value=2)
 sub_node2_3 = Node('data_2_sub',parent=node_2, metadata={'id': 2}, value=5)
 node_3 = Node('data_3', parent=root)
 sub_node3_1 = Node('sub_d_1', parent=node_3, value=3)
 sub_node3_2 = Node('sub_d_2', parent=node_3, value=5)
-```
+`
 
 to create Tree we should do <br>
 
@@ -83,12 +84,12 @@ to create Tree we should do <br>
 
 to convert from json to xml we use tree preorder traversals that means paretn first reading <br>
 <br>
-so for our example we read root data and write coresponding tag in string "<data>\n {} \n</data>",  <br>
+so for our example we read root data and write coresponding tag in string ```"<data>\n {} \n</data>"```,  <br>
 if node doesn't have childs we write data instead of {} <br>
 if node has childs for each child we doing same thing as we did for root <br>
-in our example next we will have "<data>\n <data_1> 1 < /data_1> \n {} \n</data>", <br>
-then  "<data>\n <data_1> 1 < /data_1> \n <data_2>\n {} </data_2> {}\n</data>",<br>
-then "<data>\n <data_1> 1 < /data_1> \n <data_2>\n <data_2_sub id=0 > 1 </data_2_sub> \n {} </data_2> {} \n</data>",<br>
+in our example next we will have ```"<data>\n <data_1> 1 < /data_1> \n {} \n</data>"```, <br>
+then  ```"<data>\n <data_1> 1 < /data_1> \n <data_2>\n {} </data_2> {}\n</data>"```,<br>
+then ```"<data>\n <data_1> 1 < /data_1> \n <data_2>\n <data_2_sub id=0 > 1 </data_2_sub> \n {} </data_2> {} \n</data>"```,<br>
   .... etc
   
 if we have following xml data
