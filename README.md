@@ -76,7 +76,6 @@ sub_node2_3 = Node('data_2_sub',parent=node_2, metadata={'id': 2}, value=5)
 node_3 = Node('data_3', parent=root)
 sub_node3_1 = Node('sub_d_1', parent=node_3, value=3)
 sub_node3_2 = Node('sub_d_2', parent=node_3, value=5)
-
 ```
 
 to create Tree we should do <br>
